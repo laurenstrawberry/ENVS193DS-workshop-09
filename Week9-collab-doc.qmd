@@ -14,3 +14,8 @@ library(here) #for file path
 
 ```
 
+I am reading in data here!! (edit later)
+
+```{r}
+data(pie_crab)
+```

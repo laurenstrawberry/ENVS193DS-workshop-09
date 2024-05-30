@@ -19,3 +19,15 @@ I am reading in data here!! (edit later)
 ```{r}
 data(pie_crab)
 ```
+
+I will visualize the data!!
+
+```{r}
+ggplot(aes(x = latitude, y = size), data = pie_crab) + #create ggplot
+  geom_point(color = "orange") + #scatterplot with orange points
+  labs(x = "Latitude", y = "Size") + #update axis labels
+  theme_minimal() #update theme to not have grid lines
+```
+
+
+

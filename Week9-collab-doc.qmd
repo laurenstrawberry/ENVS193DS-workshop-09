@@ -14,7 +14,7 @@ library(here) #for file path
 
 ```
 
-I am reading in data here!! (edit later)
+Reading in data:
 
 ```{r}
 data(pie_crab)
@@ -29,5 +29,12 @@ ggplot(aes(x = latitude, y = size), data = pie_crab) + #create ggplot
   theme_minimal() #update theme to not have grid lines
 ```
 
+writing a model here:
 
+```{r}
+crab_model <- lm(size ~ latitude, # formula: response ~ predicor
+                 data = pie_crab) # data frame
 
+par(mfrow = c(2,2)) #display plots 2x2 grid
+plot(crab_model) # plot diagnostics
+```
